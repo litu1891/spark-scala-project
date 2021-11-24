@@ -52,10 +52,11 @@ git config user.email # To check the mail address present
 < Make a repository in github>
 git remote add origin git@github.com:litu1891/Git_Tutorial.git
 # If we donnt have then need to create a git ssh key
-ssh-keygen -t ed25519 -C "litu.behera18@gmail.com"  # To generate ssh key
+ssh-keygen -t ed25519 -C "litu.behera18@gmail.com"  # To generate ssh key      
 eval "$(ssh-agent -s)" # To generate PID
 ssh-add ~/.ssh/id_ed25519 # Add your SSH private key to the ssh-agent
 clip < ~/.ssh/id_ed25519.pub # Copy the SSH public key to your clipboard.
+remote set-url origin git@github.com:litu1891/spark-scala-project.git
 git push -u origin master
 # Change something on any one file and then commit it
 
