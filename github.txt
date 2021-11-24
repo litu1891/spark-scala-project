@@ -1,0 +1,77 @@
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# Git-Tutorial" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/litu1891/Git-Tutorial.git 
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/litu1891/Git-Tutorial.git
+git branch -M main
+git push -u origin main
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+git pull origin master
+
+git diff <fileNmae.txt> # To see what changed has benn made on the file
+
+git diff --staged <fileName.txt> # To see changed after commit git add . / in stages
+
+git reset <FIlename> # To reset or to unstage
+git checkout <fileName.txt> # To bring the file to before changes.  We can mentions all files as .
+
+git clone <ssh address>
+
+git add -A / . / -u
+
+git rm --cached <FILENAME>
+git config --global core.excludesfile ~/.gitignore_global
+
+
+
+
+
+
+
+
+
+
+git --version
+git status
+git init # To initialize empty git repository
+git status
+git add . # To take all files into stage
+git commit -m "<message>" # To commit the files form stages
+git log # To check who changes on repository
+git config --global user.email "<name>" "<emial address>" # to give email address of the user
+git config user.email # To check the mail address present
+< Make a repository in github>
+git remote add origin git@github.com:litu1891/Git_Tutorial.git
+# If we donnt have then need to create a git ssh key
+ssh-keygen -t ed25519 -C "litu.behera18@gmail.com"  # To generate ssh key
+eval "$(ssh-agent -s)" # To generate PID
+ssh-add ~/.ssh/id_ed25519 # Add your SSH private key to the ssh-agent
+clip < ~/.ssh/id_ed25519.pub # Copy the SSH public key to your clipboard.
+git push -u origin master
+# Change something on any one file and then commit it
+
+
+
+…or create a new repository on the command line
+echo "# Git_Tutorial" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/litu1891/Git_Tutorial.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/litu1891/Git_Tutorial.git
+git branch -M main
+git push -u origin main
+
