@@ -32,14 +32,6 @@ git rm --cached <FILENAME>
 git config --global core.excludesfile ~/.gitignore_global
 
 
-
-
-
-
-
-
-
-
 git --version
 git status
 git init # To initialize empty git repository
